@@ -14,6 +14,7 @@ public class Main {
         //list.deleteFirst();
         list.deletelast();
         list.printElement();
+        list.search(30);
 
 
 

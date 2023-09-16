@@ -77,7 +77,16 @@ public class LinkList {
             prev=prev.next;
         }
         prev.next=null ;
+    }
 
+    public void search(int data){
+        Node temp = head;
+        while (temp!=null){
+            if (temp.data == data){
+                System.out.println("\nElement is found in list "+data);
+            }
+            temp=temp.next;
+        }
     }
 
 }
