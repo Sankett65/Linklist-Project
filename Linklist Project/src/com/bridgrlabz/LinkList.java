@@ -58,4 +58,11 @@ public class LinkList {
         prev.next=newNode;
 
     }
+
+    public void deleteFirst(){
+        if (isempty()){
+            System.out.println("List Is Empty");
+        }
+        head=head.next;
+    }
 }
