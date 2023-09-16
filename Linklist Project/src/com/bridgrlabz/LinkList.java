@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 public class LinkList {
     Node head = null;
+
     public boolean isempty(){
         return head==null;
     }
@@ -30,16 +31,31 @@ public class LinkList {
         }
     }
 
-    public void append(int data,int index){
-        Node newNode = new Node(data,head.next);
-        if (isempty()){
+    public void addLastElement(int data) {
+        Node newNode = new Node(data,head);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode;
+    }
+
+    public void insert(int data,int index){
+        Node newNode = new Node(data);
+        if (index==0){
             addelement(data);
             return;
         }
-        Node temp =head;
-        for (int i =1;i<index;i++){
-            temp=temp.next;
-        }
-        temp.next=newNode;
+        Node prev = head;
+        for (int i =0;i<index-1;i++){
+          prev=prev.next;
+      }
+      newNode.next=prev.next;
+        prev.next=newNode;
+
     }
 }
