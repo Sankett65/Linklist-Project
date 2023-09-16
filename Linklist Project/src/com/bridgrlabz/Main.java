@@ -8,15 +8,18 @@ public class Main {
 //        list.addelement(56);
 //        list.printElement();
 
-        list.addelement(56);
-        list.addLastElement(70);
-        list.insert(30,1);
+//        list.addelement(56);
+//        list.addLastElement(70);
+       // list.insert(30,1);
         //list.deleteFirst();
-        list.deletelast();
+     //   list.deletelast();
+      //  list.printElement();
+      //  list.search(30);
+        list.addelement(70);
+        list.addelement(30);
+        list.addelement(56);
+        list.insertAtParticularPosition(40,30);
         list.printElement();
-        list.search(30);
-
-
 
 
     }

@@ -89,4 +89,16 @@ public class LinkList {
         }
     }
 
+    public void insertAtParticularPosition(int data,int element) {
+        Node newNode = new Node(data);
+        Node temp = head;
+            while (temp!=null){
+                if (temp.data==element){
+                    newNode.next=temp.next;
+                    temp.next=newNode;
+                    return;
+                }
+                temp=temp.next;
+            }
+        }
 }
