@@ -110,4 +110,26 @@ public class LinkList {
         temp.next=temp.next.next;
         temp=null;
     }
+
+    public void sort(){
+        Node temp=head;
+        Node index=null;
+        int temp1;
+        if (head==null){
+            return;
+        }else {
+            while (temp != null) {
+                index = temp.next;
+                while (index != null) {
+                    if (temp.data > index.data) {
+                        temp1 = temp.data;
+                        temp.data = index.data;
+                        index.data = temp1;
+                    }
+                    index = index.next;
+                }
+                temp = temp.next;
+            }
+        }
+    }
 }

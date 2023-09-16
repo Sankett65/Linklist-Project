@@ -15,13 +15,21 @@ public class Main {
      //   list.deletelast();
       //  list.printElement();
       //  list.search(30);
-        list.addelement(70);
-        list.addelement(30);
-        list.addelement(56);
-        list.insertAtParticularPosition(40,30);
-        list.delete(70);
-        list.printElement();
+//        list.addelement(70);
+//        list.addelement(30);
+//        list.addelement(56);
+//        list.insertAtParticularPosition(40,30);
+//        list.delete(70);
+//        list.printElement();
 
+
+
+        list.addelement(56);
+        list.addelement(30);
+        list.addelement(40);
+        list.addelement(70);
+        list.sort();
+        list.printElement();
 
     }
 }
