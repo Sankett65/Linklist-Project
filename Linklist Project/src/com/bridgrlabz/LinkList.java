@@ -10,7 +10,7 @@ public class LinkList {
 
 
     public void addelement(int data){
-        Node newNode = new Node(data);
+        Node newNode = new Node(data,head);
         if (isempty()){
             head=newNode;
             return;
@@ -30,4 +30,16 @@ public class LinkList {
         }
     }
 
+    public void append(int data,int index){
+        Node newNode = new Node(data,head.next);
+        if (isempty()){
+            addelement(data);
+            return;
+        }
+        Node temp =head;
+        for (int i =1;i<index;i++){
+            temp=temp.next;
+        }
+        temp.next=newNode;
+    }
 }
