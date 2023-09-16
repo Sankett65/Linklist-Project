@@ -30,16 +30,16 @@ public class LinkList {
         }
     }
 
-    public void append(int data,int index){
-        Node newNode = new Node(data,head.next);
-        if (isempty()){
-            addelement(data);
+      public void addLastElement(int data) {
+        Node newNode = new Node(data,head);
+        if (head == null) {
+            head = newNode;
             return;
         }
-        Node temp =head;
-        for (int i =1;i<index;i++){
-            temp=temp.next;
+        Node temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
         }
-        temp.next=newNode;
+        temp.next = newNode;
     }
 }
