@@ -8,11 +8,9 @@ public class Main {
 //        list.addelement(56);
 //        list.printElement();
 
-        list.addelement(56);
-        list.append(30,1);
-        list.append(70,2);
+         list.addelement(56);
+        list.addLastElement(30);
+        list.addLastElement(70);
         list.printElement();
-
-
     }
 }
