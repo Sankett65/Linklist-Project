@@ -101,4 +101,13 @@ public class LinkList {
                 temp=temp.next;
             }
         }
+
+    public void delete(int data){
+        Node temp =head;
+        while (temp.next.data!=data){
+            temp=temp.next;
+        }
+        temp.next=temp.next.next;
+        temp=null;
+    }
 }

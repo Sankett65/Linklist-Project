@@ -19,6 +19,7 @@ public class Main {
         list.addelement(30);
         list.addelement(56);
         list.insertAtParticularPosition(40,30);
+        list.delete(70);
         list.printElement();
 
 
